@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Algorithms_Sedgewick">
+        <HintPath>..\..\..\Algorithms_Sedgewick\Algorithms_Sedgewick\Algorithms_Sedgewick\bin\Release\net7.0\Algorithms_Sedgewick.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
