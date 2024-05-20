@@ -7,6 +7,11 @@ public static class ColorX
 {
 	public static Vector3 AsVector(this string hex)
 	{
+		if (hex[0] == '#')
+		{
+			hex = hex.Substring(1);
+		}
+		
 		// Parse hexadecimal components
 		byte r = byte.Parse(hex[..2], System.Globalization.NumberStyles.HexNumber);
 		byte g = byte.Parse(hex[2..4], System.Globalization.NumberStyles.HexNumber);
@@ -22,6 +27,11 @@ public static class ColorX
 	
 	public static Color AsColor(this string hex)
 	{
+		if (hex[0] == '#')
+		{
+			hex = hex.Substring(1);
+		}
+		
 		// Parse hexadecimal components
 		byte r = byte.Parse(hex[..2], System.Globalization.NumberStyles.HexNumber);
 		byte g = byte.Parse(hex[2..4], System.Globalization.NumberStyles.HexNumber);
